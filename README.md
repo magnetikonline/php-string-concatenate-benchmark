@@ -30,10 +30,10 @@ sys     0m0.096s
 
 ## Conclusion
 What does this all mean? Honestly very little:
-- PHP string concatenation is implemented fast, very fast.
-- Yes, `method01.php` proves to be faster and with a *tiny* memory saving, but running over `1000000`(!) passes to see any form of difference this isn't something you would ever do in the lifecycle of a real world PHP web request anyway.
-- Don't bother with creating arrays and using using `implode()` at the conclusion for the sole aim of improving speed, obviously if your concatenation loop logic can be better written using an array (e.g. backtracking/modifying string hunks as you move along) then do so.
-- Concat a string or use arrays, it don't matter - worry about more important things
+- PHP string concatenation is implemented fast, *very* fast.
+- Yes, `method01.php` proves to be faster and with a *tiny* memory saving, but running `1000000`(!) passes to produce any real amount of difference this isn't something you would ever do in the lifecycle of a real world PHP web request anyway.
+- Don't bother with creating arrays and using `implode()` at the conclusion for the sole aim of improving speed. Obviously if concatenation logic can be better written using an array (e.g. backtracking/modifying string hunks as you move along) then do so.
+- Concat a string or use arrays, it don't matter - worry about more important things.
 - Anyway, you're probably getting confused with early .NET framework versions, it's rubbish memory allocation and the need for a <a href="http://msdn.microsoft.com/en-us/library/aa302329.aspx#vbnstrcatn_stringbuilder">`StringBuilder()`</a> class.
 
 Fin.
