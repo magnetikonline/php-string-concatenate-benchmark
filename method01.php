@@ -14,7 +14,7 @@ displayMemoryUse($startMemoryUsage);
 function fillRandomChars() {
 
 	$randomCharacters = '';
-	for ($i = 0;$i <= 20;$i++) $randomCharacters .= chr(rand(65,90));
+	for ($i = 0;$i <= 20;$i++) $randomCharacters .= chr(mt_rand(65,90));
 
 	return $randomCharacters;
 }
