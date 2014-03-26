@@ -8,6 +8,14 @@ Strings added are random sequences of ASCII `A-Z` characters to hopefully defeat
 ## Tests
 Running on an `Intel(R) Core(TM) i5-2500 CPU @ 3.30GHz` - (of course cores doesn't matter here, PHP is single threaded).
 
+```sh
+$ php -v
+
+PHP 5.5.10 (cli) (built: Mar  9 2014 12:27:59)
+Copyright (c) 1997-2014 The PHP Group
+Zend Engine v2.5.0, Copyright (c) 1998-2014 Zend Technologies
+```
+
 ### `method01.php`
 ```sh
 $ time php -d memory_limit=512M method01.php
